@@ -1,0 +1,243 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="style.css">
+
+<title>Ice Cream and Baking</title>
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<nav>
+				<ul class="nav_bar">
+					<li class="menu_item"><a href="index.html"> Ice Cream and Baking </a></li>
+					<li class="menu_item"><a href="index2.html" id="login_admin">Login admin</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div id="externalDiv">
+		<div class="container">
+			<div class="item_box icecream">
+				<img src="" alt="" class="img_item ">
+				<div class="rightDescrip">
+					<h3 class="item_title name_item"></h3>
+					<p>Price: <span class="item_price price_item"></span></p>
+					<p class="manufacture_item"></p>
+					<p class="description_item"></p>
+					<p>
+						Amount:
+						<span class="amount_item"></span>
+					</p>
+					<input type="number" class="amount_changing">
+					<button class="amount_button" onclick="setAmount(0)">Change</button>
+				</div>
+				<button class="add_item cart_button" data-id="ice1">Add to cart</button>
+			</div>
+
+			<div class="item_box icecream">
+				<img src="" alt="" class="img_item ">
+				<div class="rightDescrip">
+					<h3 class="item_title name_item"></h3>
+					<p>Price: <span class="item_price price_item"></span></p>
+					<p class="manufacture_item"></p>
+					<p class="description_item"></p>
+					<p>
+						Amount:
+						<span class="amount_item"></span>
+					</p>
+					<input type="number" class="amount_changing">
+					<button class="amount_button" onclick="setAmount(1)">Change</button>
+				</div>
+				<button class="add_item cart_button" data-id="ice6">Add to cart</button>
+			</div>
+
+			<div class="item_box icecream">
+				<img src="" alt="" class="img_item ">
+				<div class="rightDescrip">
+					<h3 class="item_title name_item"></h3>
+					<p>Price: <span class="item_price price_item"></span></p>
+					<p class="manufacture_item"></p>
+					<p class="description_item"></p>
+					<p>
+						Amount:
+						<span class="amount_item"></span>
+					</p>
+					<input type="number" class="amount_changing">
+					<button class="amount_button" onclick="setAmount(2)">Change</button>
+				</div>
+				<button class="add_item cart_button" data-id="ice2">Add to cart</button>
+			</div>
+
+			<div class="item_box icecream">
+				<img src="" alt="" class="img_item ">
+				<div class="rightDescrip">
+					<h3 class="item_title name_item"></h3>
+					<p>Price: <span class="item_price price_item">20</span></p>
+					<p class="manufacture_item"></p>
+					<p class="description_item"></p>
+					<p>
+						Amount:
+						<span class="amount_item"></span>
+					</p>
+					<input type="number" class="amount_changing">
+					<button class="amount_button" onclick="setAmount(3)">Change</button>
+				</div>
+				<button class="add_item cart_button" data-id="ice3">Add to cart</button>
+			</div>
+
+			<div class="item_box icecream">
+				<img src="" alt="" class="img_item ">
+				<div class="rightDescrip">
+					<h3 class="item_title name_item"></h3>
+					<p>Price: <span class="item_price price_item">20</span></p>
+					<p class="manufacture_item"></p>
+					<p class="description_item"></p>
+					<p>
+						Amount:
+						<span class="amount_item"></span>
+					</p>
+					<input type="number" class="amount_changing">
+					<button class="amount_button" onclick="setAmount(4)">Change</button>
+				</div>
+				<button class="add_item cart_button" data-id="ice4">Add to cart</button>
+			</div>
+
+			<!-- added block -->
+			<div class="item_box icecream" id="added">
+				<img src="" alt="" class="img_item ">
+				<div class="rightDescrip">
+					<h3 class="item_title name_item"></h3>
+					<p>Price: <span class="item_price price_item"></span></p>
+					<p class="manufacture_item"></p>
+					<p class="description_item"></p>
+					<p>
+						Amount:
+						<span class="amount_item"></span>
+					</p>
+					<input type="number" class="amount_changing">
+					<button class="amount_button" onclick="setAmount(5)">Change</button>
+				</div>
+				<button class="add_item cart_button" data-id="ice5">Add to cart</button>
+			</div>
+
+			<div class="item_box baking">
+				<img src="" alt="" class="img_item_baking ">
+				<div class="rightDescrip">
+					<h3 class="item_title name_item_baking"></h3>
+					<p>Price: <span class="item_price price_item_baking">20</span></p>
+					<p class="manufacture_item_baking"></p>
+					<p class="description_item_baking"></p>
+					<p>
+						Amount:
+						<span class="amount_item_baking"></span>
+					</p>
+					<input type="number" class="amount_changing_baking">
+					<button class="amount_button_baking" onclick="setAmount(0)">Change</button>
+				</div>
+				<button class="add_item cart_button_baking" data-id="bake1">Add to cart</button>
+			</div>
+
+			<div class="item_box baking">
+				<img src="" alt="" class="img_item_baking ">
+				<div class="rightDescrip">
+					<h3 class="item_title name_item_baking"></h3>
+					<p>Price: <span class="item_price price_item_baking">20</span></p>
+					<p class="manufacture_item_baking"></p>
+					<p class="description_item_baking"></p>
+					<p>
+						Amount:
+						<span class="amount_item_baking"></span>
+					</p>
+					<input type="number" class="amount_changing_baking">
+					<button class="amount_button_baking" onclick="setAmount(1)">Change</button>
+				</div>
+				<button class="add_item cart_button_baking" data-id="bake2">Add to cart</button>
+			</div>
+
+			<div class="item_box baking">
+				<img src="" alt="" class="img_item_baking ">
+				<div class="rightDescrip">
+					<h3 class="item_title name_item_baking"></h3>
+					<p>Price: <span class="item_price price_item_baking">20</span></p>
+					<p class="manufacture_item_baking"></p>
+					<p class="description_item_baking"></p>
+					<p>
+						Amount:
+						<span class="amount_item_baking"></span>
+					</p>
+					<input type="number" class="amount_changing_baking">
+					<button class="amount_button_baking" onclick="setAmount(2)">Change</button>
+				</div>
+				<button class="add_item cart_button_baking" data-id="bake3">Add to cart</button>
+			</div>
+
+			<div class="item_box baking">
+				<img src="" alt="" class="img_item_baking ">
+				<div class="rightDescrip">
+					<h3 class="item_title name_item_baking"></h3>
+					<p>Price: <span class="item_price price_item_baking">20</span></p>
+					<p class="manufacture_item_baking"></p>
+					<p class="description_item_baking"></p>
+					<p>
+						Amount:
+						<span class="amount_item_baking"></span>
+					</p>
+					<input type="number" class="amount_changing_baking">
+					<button class="amount_button_baking" onclick="setAmount(3)">Change</button>
+				</div>
+				<button class="add_item cart_button_baking" data-id="bake4">Add to cart</button>
+			</div>
+
+			<div class="item_box baking">
+				<img src="" alt="" class="img_item_baking ">
+				<div class="rightDescrip">
+					<h3 class="item_title name_item_baking"></h3>
+					<p>Price: <span class="item_price price_item_baking">20</span></p>
+					<p class="manufacture_item_baking"></p>
+					<p class="description_item_baking"></p>
+					<p>
+						Amount:
+						<span class="amount_item_baking"></span>
+					</p>
+					<input type="number" class="amount_changing_baking">
+					<button class="amount_button_baking" onclick="setAmount(4)">Change</button>
+				</div>
+				<button class="add_item cart_button_baking" data-id="bake5">Add to cart</button>
+			</div>
+
+			<div class="cart">
+				<p><button id="checkout">Checkout</button> <button id="clear_cart">Clear cart</button></p>
+				<div id="cart_content"></div>
+			</div>
+			<p class="select_type_payment">Select the payment type</p>
+			<div class="typeOfPayment">
+				
+				<input type="radio" name="payment" id="VisaMasterCard">
+				<label for="VisaMasterCard">Visa/MasterCard</label>
+				<input type="radio" name="payment" id="cash">
+				<label for="cash">Cash</label>
+			</div>
+			<div class="payment_content">
+				<button onclick="payment()" class="payment_button">Pay</button>
+				<p id="price_cart"></p>
+			</div>
+		</div>
+	</div>
+	<script src="index.js" defer></script>
+	<script src="header.js" defer></script>
+	<script src="cart.js" defer></script>
+	<script src="amount.js" defer></script>
+	<script src="index3.js" defer></script>
+	<script type="text/javascript" src="indexJson.js"></script>
+	<script type="text/javascript" src="index3Json.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

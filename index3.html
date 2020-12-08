@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <ul  class="nav1">
+                    <li class="menu_item"><a href="index.html"> Icecream and baking </a></li>
+					<li class="menu_item"><a href="index2.html" id="login_admin">Login admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="purchase">
+        <div class="container">
+            <h4 id="purchase_label">Your last purchase</h4>
+            <div id="purchase_content">
+
+            </div>
+            <div class="products_adding">
+                <input type="text" class="input_product" id="name_new" placeholder="Name">
+                <input type="text" class="input_product" id="price_new" placeholder="Price">
+                <input type="text" class="input_product" id="amount_new" placeholder="Amount">
+                <input type="text" class="input_product" id="description_new" placeholder="Description">
+                <input type="text" class="input_product" id="category_new" placeholder="Category">
+                <input type="text" class="input_product" id="manufacturer_new" placeholder="Manufacturer">
+                <button class="add_new_product" onclick="addNewProduct()">Add new product</button>
+            </div>
+
+            <button class="login_button" onclick="exit()">Exit admin panel</button>
+        </div> 
+    </div>
+
+ 
+    <script src="index.js" defer></script>
+    <script src="index2.js" defer></script>
+    <script src="header.js" defer></script>
+    <script src="cart.js" defer></script>
+    <script src="purchase.js" defer></script>
+    <script src="exit.js" defer></script>
+</body>
+</html>
